@@ -20,7 +20,7 @@ function Home() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/leads", form);
+      await axios.post("https://leaddesk-mini-x9hq.onrender.com/api/leads", form);
 
       alert("Lead Submitted Successfully!");
 

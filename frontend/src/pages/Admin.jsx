@@ -15,7 +15,7 @@ function Admin() {
     const token = localStorage.getItem("token");
 
     const res = await axios.get(
-      "http://localhost:5000/api/leads",
+      "https://leaddesk-mini-x9hq.onrender.com/api/leads",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ function Admin() {
     const token = localStorage.getItem("token");
 
     await axios.patch(
-      `http://localhost:5000/api/leads/${id}`,
+      `https://leaddesk-mini-x9hq.onrender.com/api/leads/${id}`,
       { status },
       {
         headers: {
